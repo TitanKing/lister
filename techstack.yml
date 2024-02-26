@@ -1,0 +1,20 @@
+repo_name: TitanKing/lister
+report_id: 295c81c8258ad5b636f788025fa98853
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-26T10:01:15+00:00'
+requested_by: TitanKing
+provider: github
+branch: main
+detected_tools_count: 1
+tools:
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/TitanKing/lister
+  detection_source: Repo Metadata
