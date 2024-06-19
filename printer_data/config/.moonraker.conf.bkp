@@ -10,7 +10,7 @@ subscriptions =
 	mainsail
 
 [file_manager]
-enable_object_processing = False
+enable_object_processing = True
 
 [update_manager]
 refresh_interval = 168
@@ -94,6 +94,14 @@ managed_services = klipper
 info_tags = 
 	desc=Beacon Surface Scanner
 
+[update_manager klipper]
+channel = dev
+pinned_commit = 49c0ad6369670da574f550aa878ce9f6e1899e74
+
+[update_manager moonraker]
+channel = dev
+pinned_commit = 346a3d7c9dca6499bdef2957ca39a23c702b0268
+
 [history]
 
 [octoprint_compat]
@@ -116,4 +124,12 @@ trusted_clients =
 	FE80::/10
 	::1/128
 	FD00::/8
+
+[update_manager sonar]
+type = git_repo
+path = ~/sonar
+origin = https://github.com/mainsail-crew/sonar.git
+primary_branch = main
+managed_services = sonar
+install_script = tools/install.sh
 
